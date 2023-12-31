@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhondt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+    <haeder class="container-fluid">
+        <div id="banner" class="row text-center">
+            <div class="col-12 col-md-12 pt-5 pb-5 bg-info">
+                <h1>Sistema D'hondt</h1>
+                <h3>Selector de escaños</h3>
+            </div>
+        </div>
+        <nav class="navbar bg-body-tertiary">
+            <form class="container-fluid justify-content-center">
+                <a href="/index.html"><button class="btn btn-outline-success me-2" type="button">HOME</button></a>
+                <a href="/htmls/dhondt.html"><button class="btn btn-outline-success me-2" type="button">Sistema
+                        D'hondt</button></a>
+                <a href="/htmls/victor.html"><button class="btn btn-outline-success me-2" type="button">Victor
+                        D'hondt</button></a>
+                <a href="https://www.linkedin.com/in/saulociddev/" target="_blank"><button
+                        class="btn btn-outline-success me-2" type="button">Mi Linkedin</button></a>
+                <a href="https://github.com/saulocid" target="_blank"><button class="btn btn-outline-success me-2"
+                        type="button">Mi Github</button></a>
+                <a href="https://tusueldoendolareshoy.github.io/" target="_blank"><button
+                        class="btn btn-outline-success me-2" type="button">Tu sueldo en dólares</button></a>
+            </form>
+        </nav>
+    </haeder>
+
+    <div class="container-fluid text-center col-12 col-md-6">
+        <h2>Ingreso de datos</h2>
+        <p>Ingrese los datos correspondientes en las casillas de formularios.</p>
+        <p>Debe llenar TODOS y cada uno de ellos para poder clickear en el boton CALCULAR.</p>
+        <p>Al final, el programa le dirá cuántas bancas tiene cada uno de los partidos que ha asignado.</p>
+        <form action="#" id="miFormulario">
+            <label for="bancas">Total de bancas</label><br>
+            <input type="number" name="bancas" id="bancas" required><br>
+
+            <label for="cantidad">Cantidad de partidos</label><br>
+            <input type="number" name="cantidad" id="cantidad" required><br>
+
+            <button type="button" class="btn btn-dark m-1" onclick="agregarFormulario()">AGREGAR</button>
+            <div id="partidos"></div>
+        </form>
+    </div>
+
+    <footer class="text-center container-fluid pt-5 pb-5 bg-info">
+        <h4>Sistema D'hondt libre de derechos &copy Saulo Cid Dev</h4>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
